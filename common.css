@@ -677,5 +677,11 @@ footer .right span {
         height: 150px;
         flex-direction: column;
         gap: 5%;
+        text-align: center;
     }
+
+    footer .right img:nth-of-type(2) {
+        display: none;
+    }
+
 }
