@@ -410,11 +410,12 @@ footer {
     display: flex;
     align-items: center;
     color: #fff;
+
 }
 
 footer .left {
     width: 77%;
-    height: 120px;
+    height: 130px;
     background: #e84c3d;
     display: flex;
     align-items: center;
@@ -428,7 +429,7 @@ footer .left p {}
 
 footer .right {
     width: 23%;
-    height: 120px;
+    height: 130px;
     background-color: #bf2719;
     display: flex;
     align-items: center;
@@ -521,7 +522,7 @@ footer .right span {
 
     .nav_back .nav_mob {
         width: 100%;
-        margin: 25% auto 10%;
+        margin: 30% auto 10%;
         display: flex;
         flex-direction: column;
     }
@@ -667,8 +668,13 @@ footer .right span {
         height: 200px;
     }
 
+    footer .left {
+        height: 150px;
+        padding: 5% 10%;
+    }
 
     footer .right {
+        height: 150px;
         flex-direction: column;
         gap: 5%;
     }
