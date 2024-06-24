@@ -161,6 +161,7 @@ main .main_title .sub_title {
 .main_box .main_box_inner .btn01 {
     font-size: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .a {
@@ -444,6 +445,7 @@ footer .right {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 footer .right img {}

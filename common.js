@@ -73,8 +73,6 @@ berger.onclick = function () {
 const navMenu = document.querySelector('.nav_menu');
 
 window.addEventListener("scroll", function () {
-    console.log('스크롤확인')
-    console.log(window.scrollY)
 
     if (window.scrollY > 0) {
         navMenu.classList.add('active')
