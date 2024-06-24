@@ -41,18 +41,19 @@ header .nav_pc a {
 
 header .nav_pc a img {
     padding-left: 5px;
+}
 
+header .nav_pc a:hover {
+    color: rgb(220, 220, 220);
 }
 
 .nav_berger {
     display: none;
 }
 
-.nav_back {
+.nav_menu {
     display: none;
 }
-
-
 
 .sns {
     width: 5%;
@@ -85,6 +86,7 @@ main .main_title {
     position: absolute;
     top: 40%;
     left: 20%;
+    z-index: 1;
     color: #fff;
 
 }
@@ -121,10 +123,18 @@ main .main_title .sub_title {
 .btn02 {
     width: 135px;
     text-align: center;
-    border: 1px solid #e84c3d;
+    border: 2px solid #e84c3d;
     background-color: #e84c3d;
     padding: 10px 0;
     border-radius: 50px 50px;
+}
+
+.btn01:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.btn02:hover {
+    background-color: rgb(232, 76, 61, 0.3);
 }
 
 .main_box {
@@ -460,15 +470,6 @@ footer .right span {
 
 @media (max-width: 999px) {
     header {
-        width: 90%;
-        border: none;
-        position: fixed;
-        z-index: 99;
-
-    }
-
-    header .nav_pc,
-    header>.sns {
         display: none;
     }
 
@@ -478,11 +479,11 @@ footer .right span {
 
     .nav_berger p {
         position: fixed;
-        top: 40px;
+        top: 3%;
         right: 5%;
         width: 23px;
         height: 20px;
-        z-index: 99;
+        z-index: 999;
     }
 
     .nav_berger p span {
@@ -491,13 +492,13 @@ footer .right span {
         width: 23px;
         height: 2px;
         border: 1px;
-        margin: 5px 0;
+        margin: 4px 0;
         transition: 0.5s;
 
     }
 
     .nav_berger.active p span:nth-of-type(1) {
-        transform: translateY(7px) rotate(-45deg);
+        transform: translateY(6px) rotate(-45deg);
     }
 
     .nav_berger.active p span:nth-of-type(2) {
@@ -505,10 +506,39 @@ footer .right span {
     }
 
     .nav_berger.active p span:nth-of-type(3) {
-        transform: translateY(-7px) rotate(45deg);
+        transform: translateY(-6px) rotate(45deg);
     }
 
-    .nav_back.active {
+    .nav_menu {
+        display: block;
+    }
+
+    .nav_menu.active {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(231, 99, 86, 0.3);
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+
+    .nav_menu .logo {
+        width: 80px;
+        position: fixed;
+        top: 3%;
+        left: 5%;
+        z-index: 999;
+    }
+
+    .nav_menu .logo img {
+        width: 100%;
+    }
+
+    .nav_menu .nav_back {
+        display: none;
+    }
+
+    .nav_menu .nav_back.active {
         display: block;
     }
 
@@ -517,7 +547,7 @@ footer .right span {
         height: 100vh;
         background: rgba(0, 0, 0, 0.9);
         position: fixed;
-        z-index: 1;
+        z-index: 99;
     }
 
     .nav_back .nav_mob {
@@ -545,7 +575,7 @@ footer .right span {
     .nav_back .sns a {
         color: #fff;
         display: flex;
-        height: 50px;
+        height: 40px;
     }
 
     .nav_back .sns a img {
@@ -655,7 +685,7 @@ footer .right span {
     }
 
     .b .news_box figure figcaption b {
-        margin: 1% 0;
+        margin: 2% 0;
 
     }
 
@@ -683,5 +713,4 @@ footer .right span {
     footer .right img:nth-of-type(2) {
         display: none;
     }
-
 }

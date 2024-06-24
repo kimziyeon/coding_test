@@ -57,14 +57,29 @@ for (let j = 0; j < 8; j++) {
 }
 
 
-//버거메뉴
+//버거 메뉴
 
 const berger = document.querySelector('.nav_berger');
-const mobNav = document.querySelector('.nav_back');
+const navBack = document.querySelector('.nav_back');
 
 berger.onclick = function () {
     berger.classList.toggle('active');
-    mobNav.classList.toggle('active');
+    navBack.classList.toggle('active');
 }
 
 
+//헤더 스크롤
+
+const navMenu = document.querySelector('.nav_menu');
+
+window.addEventListener("scroll", function () {
+    console.log('스크롤확인')
+    console.log(window.scrollY)
+
+    if (window.scrollY > 0) {
+        navMenu.classList.add('active')
+    } else {
+        navMenu.classList.remove('active')
+    }
+
+});
